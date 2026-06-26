@@ -1,1 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>DOCH – Einsatz</title>
+  <style>
+    body {
+      background: #111;
+      color: #f33;
+      font-family: monospace;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .doch-core {
+      border: 1px solid #f33;
+      padding: 20px 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="doch-core">
+    <div>DOCH: <span id="doch-flag">False</span></div>
+    <div>Impuls: <span id="doch-impuls">idle</span></div>
+  </div>
+
+  <script>
+    function dochEinsatz() {
+      const doch = true;
+      const impuls = "gesetzt";
+
+      document.getElementById("doch-flag").textContent = doch;
+      document.getElementById("doch-impuls").textContent = impuls;
+    }
+
+    dochEinsatz();
+  </script>
+</body>
+</html>
 
